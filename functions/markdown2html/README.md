@@ -25,7 +25,7 @@ const res = await fetch(api, {
   body: markdownContent,
 })
 
-const htmlString = res.text()
+const htmlString = await res.text()
 
 console.log(htmlString)
 ```
